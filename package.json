@@ -4,7 +4,8 @@
   "description": "333",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   },
   "homepage": "https://github.com/NataliKun/HW-repo#readme",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "husky": "^6.0.0"
   },
   "dependencies": {
     "eslint": "^7.25.0"
