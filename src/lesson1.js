@@ -13,7 +13,7 @@ function sumString(a,b){
 
 function sumU(){
     let num= prompt('vvedi tri chisla');
-      if(num.length==3){
+      if(num.length===3){
         let a=+num[0];
         let b=+num[1];
         let c=+num[2];

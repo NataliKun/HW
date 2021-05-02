@@ -25,7 +25,7 @@ const lesson2 = require('./lesson2');
     expect(lesson2.difference(1, "a")).toBe("not number");
   });
 
-  test("Sum num user", () =>{
+  test("Sum number user", () =>{
     window.prompt = jest.fn(() => {return "1"});
     expect (lesson2.month()).toBe("January");
     window.prompt = jest.fn(() => {return "a"});

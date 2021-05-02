@@ -1,7 +1,7 @@
 function arrSum(){
     let arr =[1,2,3,4,5,6,7,8,9,10];
     let sum = 0;
-    for (i=0; i<10 ;i++){
+    for (let i=0; i<10 ;i++){
        sum += arr[i];
       }
     return sum
@@ -26,7 +26,7 @@ if(typeof(arr)== "object"){
      return 'arr not correct';
 }} else {
     return "not arr";
-}};
+}}
   
 module.exports = {
     "arrSum":arrSum,

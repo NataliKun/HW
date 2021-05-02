@@ -16,7 +16,7 @@ function month(){
   let num = +prompt('number month');
   let month= ["January","February","March","April","May","June","July","August","September","October","November","December"]
   if(!isNaN(num)){
-    if(num<=12 && num%1==0 ){
+    if(num<=12 && num%1===0 ){
      return month[num-1]
     } else {
       return "number not correct";
