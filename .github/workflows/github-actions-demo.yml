@@ -1,7 +1,7 @@
-name: GitHub Actions Demo
-on: [push]
+name: check pullrequest
+on: [pull_request]
 jobs:
-  Explore-GitHub-Actions:
+  First-Step-on-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -10,5 +10,5 @@ jobs:
       with:
         node-version: 14.x
     - run: npm i
-    - run: npm lint
+    - run: npm run lint
     - run: npm test
