@@ -1,4 +1,4 @@
-function diff(a,b){
+export function diff(a,b){
 if (!isNaN(a) &&!isNaN(b)){
   if(a>b){
     return a;
@@ -11,7 +11,7 @@ if (!isNaN(a) &&!isNaN(b)){
     return "no correct";
 }}
 
-function isWord(string){
+export function isWord(string){
   if(typeof(string)==="string") {
     if( string.lastIndexOf(" ") === -1 ){
       return true;
@@ -22,15 +22,10 @@ function isWord(string){
     return "not string";
 }}
 
-function pow(a,x){
+export function pow(a,x){
   if (typeof(a)==="number" && typeof(x)==="number"){
     return (a**x);
   }else{
     return "not number";
   }
 }
-module.exports = {
-    "diff":diff,
-    "isWord":isWord,
-    "pow": pow    
-};

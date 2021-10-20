@@ -1,4 +1,4 @@
-function task1(){
+export function task1(){
   let birthdayUser=prompt('введи дату в формате ДД.ММ.ГГГГ.');
   let birthday = birthdayUser.split('.');
   let dateUser=[] ;
@@ -40,9 +40,3 @@ function task2(){
     let sumMin= date.getHours()*60 + date.getMinutes();
     return sumMin;
 }
-
-module.exports = {
-    "task1":task1,
-   
-};
-

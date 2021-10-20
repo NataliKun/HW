@@ -19,10 +19,16 @@
   },
   "homepage": "https://github.com/NataliKun/HW-repo#readme",
   "devDependencies": {
+    "babel-jest": "^27.2.1",
     "eslint": "^7.25.0",
     "eslint-plugin-jest": "^24.3.6",
     "husky": "^6.0.0",
     "jest": "^26.6.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
 }

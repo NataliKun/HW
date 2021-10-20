@@ -1,4 +1,4 @@
-function difference(a,b){
+export function difference(a,b){
     if (typeof(a)=='number'&&typeof(b)=='number'){
       if (a>b){
           return a;
@@ -12,7 +12,7 @@ function difference(a,b){
     }
 }
 
-function month(){
+export function month(){
   let num = +prompt('number month');
   let month= ["January","February","March","April","May","June","July","August","September","October","November","December"]
   if(!isNaN(num)){
@@ -24,9 +24,3 @@ function month(){
   }else{
     return "no number";
 }}
- 
-module.exports = {
-    "difference":difference,
-    "month": month,
-    
-};

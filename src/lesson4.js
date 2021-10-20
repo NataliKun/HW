@@ -1,11 +1,11 @@
-function userObj(){
+export function userObj(){
   let user = {
     name: 'John'
   }
   let age =+prompt("age")
   if(!isNaN(age)){
     user.age = age;
-    let admin = Object.assign({}, user)
+    let admin = {... user}
     admin.role ='admin';
     let nameAdmin = admin.name;
     let ageAdmin = admin.age;
@@ -14,7 +14,3 @@ function userObj(){
    } else{
       return 'ne chislo';
 }}
-module.exports = {
-    "userObj":userObj,
-    
-};

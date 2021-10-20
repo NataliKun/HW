@@ -1,17 +1,17 @@
-function sum(a,b){
+export function sum(a,b){
     return `${a*b} ${a+b}`;
 }
 
-function sumString(a,b){
-  if(typeof(a)=="string" && typeof(b)=="string"){
-    let sum =a.length+b.length;
-    return sum;
-  }else {
-      return "not string";
+export function sumString(a,b){
+  if(typeof(a)!=="string" || typeof(b)!=="string"){
+   a=String(a)
+   b=String(b)
   }
+  let sum =a.length+b.length;
+  return sum;
 }
 
-function sumU(){
+export function sumU(){
     let num= prompt('vvedi tri chisla');
       if(num.length===3){
         let a=+num[0];
@@ -28,12 +28,3 @@ function sumU(){
           return 'Slishkom mnogo znakov';
       }
 }
-
-
-module.exports = {
-    "sum":sum,
-    "sumString":sumString,
-    "sumU":sumU
-
-};
-
